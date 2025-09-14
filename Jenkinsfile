@@ -5,7 +5,7 @@ pipeline {
         choise choises: ['BRANCH', 'TAG', 'BRANCH_and_TAG', 'REVISION', 'PULL_REQUESTS'], description: '', name: 'TYPE'
         gitParameter (  branch: '',
                         branchFilter: '.*',
-                        defaultValue: '',
+                        defaultValue: 'main',
                         description: '',
                         name: 'BRANCH',
                         quickFilterEnabled: true,
@@ -16,7 +16,7 @@ pipeline {
                         useRepository: 'git@github.com:Primero-QA/java_for_testers.git')
         gitParameter (  branch: '',
                         branchFilter: '.*',
-                        defaultValue: '',
+                        defaultValue: 'main',
                         description: '',
                         name: 'TAG',
                         quickFilterEnabled: true,
@@ -27,7 +27,7 @@ pipeline {
                         useRepository: 'git@github.com:Primero-QA/java_for_testers.git')
         gitParameter (  branch: '',
                         branchFilter: '.*',
-                        defaultValue: '',
+                        defaultValue: 'main',
                         description: '',
                         listSize: '10',
                         name: 'BRANCH_and_TAG',
@@ -39,7 +39,7 @@ pipeline {
                         useRepository: 'git@github.com:Primero-QA/java_for_testers.git')
         gitParameter (  branch: '',
                         branchFilter: '.*',
-                        defaultValue: '',
+                        defaultValue: 'main',
                         description: '',
                         name: 'REVISION',
                         quickFilterEnabled: true,
@@ -50,7 +50,7 @@ pipeline {
                         useRepository: 'git@github.com:Primero-QA/java_for_testers.git')
         gitParameter (  branch: '',
                         branchFilter: '.*',
-                        defaultValue: '',
+                        defaultValue: 'main',
                         description: '',
                         name: 'PULL_REQUESTS',
                         quickFilterEnabled: true,
