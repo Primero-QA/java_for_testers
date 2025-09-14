@@ -2,7 +2,7 @@ pipeline {
     agent {label 'ubuntu'}
     
     parameters {
-        choise choises: ['BRANCH', 'TAG', 'BRANCH_and_TAG', 'REVISION', 'PULL_REQUESTS'], description: '', name: 'TYPE'
+        choice choices: ['BRANCH', 'TAG', 'BRANCH_and_TAG', 'REVISION', 'PULL_REQUESTS'], description: '', name: 'TYPE'
         gitParameter (  branch: '',
                         branchFilter: '.*',
                         defaultValue: 'main',
